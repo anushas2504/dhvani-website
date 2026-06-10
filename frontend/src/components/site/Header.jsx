@@ -45,7 +45,7 @@ export default function Header() {
               Dhvani
             </span>
             <span className="hidden sm:block text-[10px] uppercase tracking-[0.22em] text-[#F5C518] mt-1">
-              Digital Growth Studio
+              Digital Marketing Studio
             </span>
           </div>
         </Link>
