@@ -1,0 +1,105 @@
+{
+  "theme": "light",
+  "archetype": "Archetype 5 (Luxury) + Archetype 4 (Swiss & High-Contrast)",
+  "brand": {
+    "name": "Dhvani",
+    "tagline": "Amplify. Engage. Succeed.",
+    "niche": "Digital marketing for concerts, premium Indian brands, and showrooms",
+    "vibe": "Bold editorial, classy, dynamic, strong typography, generous spacing, agency feel"
+  },
+  "typography": {
+    "heading_font": "Playfair Display",
+    "body_font": "Outfit",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.1] font-bold",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl tracking-tight leading-[1.1] font-semibold",
+      "h3": "text-2xl sm:text-3xl tracking-tight font-medium",
+      "h4": "text-xl sm:text-2xl font-medium",
+      "body": "text-base sm:text-lg leading-relaxed text-[#4A5568]",
+      "overline": "text-xs sm:text-sm uppercase tracking-[0.2em] font-bold text-[#D4AF37]"
+    }
+  },
+  "colors": {
+    "background": "#FDFBF7",
+    "surface": "#FFFFFF",
+    "surface_alt": "#F3F0EA",
+    "primary": "#0A192F",
+    "primary_hover": "#112645",
+    "accent_gold": "#D4AF37",
+    "accent_gold_hover": "#B3932E",
+    "text_main": "#0A192F",
+    "text_muted": "#4A5568",
+    "border": "#E2E8F0"
+  },
+  "layout_spacing": {
+    "section_padding": "py-24 sm:py-32 lg:py-40",
+    "container_max": "max-w-7xl mx-auto px-6 sm:px-8 lg:px-12",
+    "bento_gap": "gap-8 sm:gap-12",
+    "philosophy": "Generous Spacing (Tailwind Scale 2-3x typical). Containers with borders must have internal padding (p-8)."
+  },
+  "components": {
+    "header": {
+      "style": "Glassmorphism sticky header (backdrop-blur-xl bg-[#FDFBF7]/80 border-b border-[#0A192F]/10). Logo on left, nav links center, 'Contact Us' button right.",
+      "instructions": "Ensure it overlays hero elegantly without blocking content."
+    },
+    "hero": {
+      "style": "Editorial split layout or asymmetrical text. Massive serif 'Amplify. Engage. Succeed.' tagline. Image masked in an arch or sharp rectangle with a subtle gold accent.",
+      "instructions": "Do not just center everything. Create tension. No heavy black overlay."
+    },
+    "services_bento": {
+      "style": "Tetris grid layout (grid-cols-1 md:grid-cols-2 lg:grid-cols-4). Services: SEM, SMM, SEO, Website Designing. Sharp edges or very subtle rounded corners.",
+      "instructions": "Use minimalistic cards. Off-white backgrounds, navy text, hover state reveals gold border or gold text change."
+    },
+    "portfolio_gallery": {
+      "style": "Magazine-like grid or horizontal scroll. Large photography, thin 1px borders, generous whitespace.",
+      "instructions": "Projects: Sid Sriram/Jubin Nautiyal concert ads, Kavitha Gutta bridal ads, Car care showroom Google ads."
+    },
+    "contact_form": {
+      "style": "Minimalist editorial form. Use border-b inputs only (no boxes). Large navy or gold submit button.",
+      "instructions": "Fields: Name, Email, Phone, Message. Must integrate with backend (MongoDB)."
+    },
+    "floating_whatsapp": {
+      "style": "Fixed bottom right. Circular button with WhatsApp icon, styled in brand colors or subtle green.",
+      "instructions": "Link to https://wa.me/919059294740"
+    }
+  },
+  "motion": {
+    "hover": "Subtle translate-y-1 on cards, text color transitions on links, scale-105 on portfolio images.",
+    "entry": "Staggered fade-up on scroll for sections."
+  },
+  "media": {
+    "images": {
+      "hero_concert": {
+        "url": "https://images.pexels.com/photos/13230484/pexels-photo-13230484.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Night concert scene with audience, stage, and colorful lighting effects.",
+        "placement": "Hero section visual or Background (if background, use light opacity)"
+      },
+      "portfolio_concert": {
+        "url": "https://images.unsplash.com/photo-1563841930606-67e2bce48b78?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwyfHxjb25jZXJ0JTIwc3RhZ2UlMjBjcm93ZHxlbnwwfHx8fDE3ODEwNjY3MjF8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Concert crowd and stage",
+        "placement": "Portfolio - Concert Ads (Sid Sriram, Atif Aslam, etc.)"
+      },
+      "portfolio_bridal": {
+        "url": "https://images.unsplash.com/photo-1610047614301-13c63f00c032?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxicmlkYWwlMjBmYXNoaW9uJTIwZGVzaWdufGVufDB8fHx8MTc4MTA2NjcyMXww&ixlib=rb-4.1.0&q=85",
+        "alt": "Bridal fashion design in red and gold sari",
+        "placement": "Portfolio - Kavitha Gutta Bridal Meta Ads"
+      },
+      "portfolio_car": {
+        "url": "https://images.unsplash.com/photo-1764013290175-2b76e9a00b2e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBjYXIlMjBzaG93cm9vbXxlbnwwfHx8fDE3ODEwNjY3MjF8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Collection of luxury cars in a showroom",
+        "placement": "Portfolio - Car Care Showroom Google Ads"
+      }
+    }
+  },
+  "specific_instructions_for_main_agent": [
+    "Build the UI focusing on a bold editorial aesthetic. Use 'Playfair Display' for main headings and 'Outfit' for body.",
+    "The required sections are: Welcome (Hero), About Us, Our Vision, Our Mission, Our Service, Our Work Reference, Contact Us.",
+    "Contact Details to show: +919059294740, anushas2504@gmail.com, Vijayawada.",
+    "Implement a working Contact Us form that saves to MongoDB.",
+    "Create an '/admin' view to see the submitted leads from the database.",
+    "Add a Floating WhatsApp button linked to +919059294740.",
+    "All interactive elements MUST include 'data-testid' attributes (e.g., data-testid='contact-submit-button').",
+    "Use Phosphor Icons or Lucide React for UI adornments (WhatsApp, email, phone icons, arrow icons).",
+    "Ensure generous spacing (py-24 or py-32) between sections."
+  ]
+}
