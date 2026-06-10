@@ -40,11 +40,6 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-24 flex items-center justify-between">
         <Link to="/" data-testid="logo-link" className="flex items-center gap-3 group">
-          <img
-            src={SITE.logo}
-            alt="Dhvani logo mark"
-            className="h-16 w-auto object-contain"
-          />
           <div className="leading-none">
             <span className="block font-display text-3xl sm:text-4xl font-bold tracking-tight text-[#1E4D8C]">
               Dhvani

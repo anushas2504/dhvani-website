@@ -5,10 +5,7 @@ export default function Footer() {
     <footer data-testid="site-footer" className="bg-[#1E4D8C] text-[#FDFBF7]/80 border-t border-[#FDFBF7]/10">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12 grid md:grid-cols-3 gap-10 items-center">
         <div>
-          <div className="flex items-center gap-3">
-            <img src={SITE.logo} alt="Dhvani" className="h-14 w-auto object-contain brightness-0 invert" />
-            <span className="font-display text-4xl font-bold text-[#FDFBF7]">Dhvani</span>
-          </div>
+          <span className="font-display text-4xl font-bold text-[#FDFBF7]">Dhvani</span>
           <p className="text-xs uppercase tracking-[0.22em] text-[#F5C518] mt-4">Amplify. Engage. Succeed.</p>
         </div>
         <div className="md:text-center text-sm">
