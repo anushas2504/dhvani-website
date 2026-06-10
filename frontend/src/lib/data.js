@@ -78,17 +78,24 @@ export const SERVICES = [
 export const CONCERT_POSTERS = [
   {
     artist: "Sid Sriram",
-    tour: "USA Tour 2023",
+    tour: "All Love No Hate — USA Tour 2023",
     date: "September 2023",
     venue: "Multi-City USA",
-    accent: "from-[#1E4D8C] to-[#0F2A50]",
+    image: "/portfolio/sid-sriram-poster.jpg",
   },
   {
     artist: "B Praak",
-    tour: "Live in Concert",
-    date: "Sat · Sept 16, 2023",
+    tour: "Musical Journey · Along with Symphony",
+    date: "Sat · Sept 16, 2023 · 8:00 PM",
     venue: "NJPAC, Newark, NJ",
-    accent: "from-[#0F2A50] to-[#1E4D8C]",
+    image: "/portfolio/bpraak-poster.jpg",
+  },
+  {
+    artist: "The Sonu Nigam Show",
+    tour: "Live in Concert",
+    date: "Sat · Sept 9, 2023 · 6:30 PM",
+    venue: "Long Beach Arena, Long Beach CA",
+    image: "/portfolio/sonu-poster.jpg",
   },
   {
     artist: "Richa Sharma",
@@ -111,13 +118,6 @@ export const CONCERT_POSTERS = [
     venue: "Hard Rock Live at Etess Arena, Atlantic City NJ",
     accent: "from-[#1E4D8C] to-[#0F2A50]",
   },
-  {
-    artist: "The Sonu Nigam Show",
-    tour: "Live in Concert",
-    date: "Sat · Sept 9, 2023 · 6:30 PM",
-    venue: "Long Beach Arena, Long Beach CA",
-    accent: "from-[#163C70] to-[#1E4D8C]",
-  },
 ];
 
 // Exact work-reference case studies from the portfolio PDF
@@ -134,7 +134,7 @@ export const WORK = [
       { k: "Conversions (4w avg)", v: "4.52K" },
       { k: "Spend", v: "₹81.2K" },
     ],
-    image: "/portfolio/sidsriram-ad.png",
+    image: "/portfolio/sid-sriram-poster.jpg",
   },
   {
     id: "car-care",
@@ -148,7 +148,8 @@ export const WORK = [
       { k: "Avg. CPC", v: "₹0.63" },
       { k: "Spend", v: "₹12.8K" },
     ],
-    image: "/portfolio/carcare-ad.png",
+    image:
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=85&auto=format&fit=crop",
   },
   {
     id: "arka-bridals",
@@ -162,7 +163,7 @@ export const WORK = [
       { k: "Link Clicks", v: "1,549" },
       { k: "Spend", v: "₹7.72K" },
     ],
-    image: "/portfolio/arka-insights.png",
+    image: "/portfolio/arka-showroom.webp",
   },
   {
     id: "shilpa",
@@ -176,7 +177,7 @@ export const WORK = [
       { k: "Profile Visits", v: "542" },
       { k: "Format", v: "Reel + Ad" },
     ],
-    image: "/portfolio/arka-reel.png",
+    image: "/portfolio/kavitha-bride.webp",
   },
 ];
 

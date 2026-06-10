@@ -28,21 +28,37 @@ export default function Work() {
               <article
                 key={p.artist}
                 data-testid={`concert-poster-${p.artist.toLowerCase().replace(/\s+/g, "-")}`}
-                className={`group relative aspect-[3/4] overflow-hidden bg-gradient-to-br ${p.accent} text-[#FDFBF7] p-5 flex flex-col justify-between border border-[#1E4D8C]/20 hover:-translate-y-1 transition`}
+                className={`group relative aspect-[3/4] overflow-hidden border border-[#1E4D8C]/20 hover:-translate-y-1 transition ${
+                  p.image ? "bg-[#0F2A50]" : `bg-gradient-to-br ${p.accent} text-[#FDFBF7] p-5 flex flex-col justify-between`
+                }`}
               >
-                <div>
-                  <span className="text-[10px] uppercase tracking-[0.22em] text-[#F5C518]">Live in Concert</span>
-                </div>
-                <div>
-                  <h3 className="font-display text-2xl leading-tight">{p.artist}</h3>
-                  <p className="font-display italic text-xs text-[#F5C518] mt-1">{p.tour}</p>
-                  <div className="mt-4 space-y-1.5 text-[10px] sm:text-xs text-[#FDFBF7]/85">
-                    <p className="flex items-start gap-1.5"><Calendar size={11} className="mt-0.5 text-[#F5C518]" /><span>{p.date}</span></p>
-                    <p className="flex items-start gap-1.5"><MapPin size={11} className="mt-0.5 text-[#F5C518]" /><span>{p.venue}</span></p>
-                  </div>
-                </div>
-                <div className="absolute top-3 right-3 w-6 h-6 rounded-full border border-[#F5C518]/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-                  <ArrowUpRight size={12} className="text-[#F5C518]" />
+                {p.image ? (
+                  <>
+                    <img
+                      src={p.image}
+                      alt={`${p.artist} concert poster`}
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-[#0F2A50]/0 group-hover:bg-[#0F2A50]/30 transition" />
+                  </>
+                ) : (
+                  <>
+                    <div>
+                      <span className="text-[10px] uppercase tracking-[0.22em] text-[#F5C518]">Live in Concert</span>
+                    </div>
+                    <div>
+                      <h3 className="font-display text-2xl leading-tight">{p.artist}</h3>
+                      <p className="font-display italic text-xs text-[#F5C518] mt-1">{p.tour}</p>
+                      <div className="mt-4 space-y-1.5 text-[10px] sm:text-xs text-[#FDFBF7]/85">
+                        <p className="flex items-start gap-1.5"><Calendar size={11} className="mt-0.5 text-[#F5C518]" /><span>{p.date}</span></p>
+                        <p className="flex items-start gap-1.5"><MapPin size={11} className="mt-0.5 text-[#F5C518]" /><span>{p.venue}</span></p>
+                      </div>
+                    </div>
+                  </>
+                )}
+                <div className="absolute top-3 right-3 w-7 h-7 rounded-full bg-[#FDFBF7]/15 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                  <ArrowUpRight size={13} className="text-[#F5C518]" />
                 </div>
               </article>
             ))}
