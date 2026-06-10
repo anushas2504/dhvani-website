@@ -163,7 +163,7 @@ export const WORK = [
       { k: "Link Clicks", v: "1,549" },
       { k: "Spend", v: "₹7.72K" },
     ],
-    image: null,
+    image: "/portfolio/arka-bridal.webp",
   },
 ];
 
@@ -180,10 +180,13 @@ export const KAVITHA_ADS = [
 
 // Exact client logos referenced in the portfolio
 export const CLIENTS = [
-  "Bhavyaa Designer Boutique",
+  "Balaji Entertainments",
+  "Sai USA Inc",
+  "Dembi Productions",
+  "Stage Paint Productions",
+  "KAY Productions",
   "ARKA Bridals",
   "Chennai Car Care",
-  "RS Entertainment",
   "Kavitha Gutta",
-  "Divya Kanigalupula",
+  "RS Entertainment",
 ];
