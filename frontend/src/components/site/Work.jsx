@@ -164,17 +164,17 @@ export default function Work() {
               <figure
                 key={i}
                 data-testid={`kavitha-ad-${i}`}
-                className="group bg-[#FDFBF7] border border-[#1E4D8C]/10 overflow-hidden"
+                className="group bg-[#F3F0EA] border border-[#1E4D8C]/10 overflow-hidden"
               >
-                <div className="aspect-[9/16] overflow-hidden bg-[#F3F0EA]">
+                <div className="bg-[#FDFBF7]">
                   <img
                     src={a.src}
                     alt={`Kavitha Gutta Meta ad ${i + 1}`}
                     loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-auto object-contain block group-hover:scale-[1.02] transition-transform duration-700"
                   />
                 </div>
-                <figcaption className="px-3 py-2 text-[10px] uppercase tracking-[0.18em] text-[#1E4D8C]/70 border-t border-[#1E4D8C]/10">
+                <figcaption className="px-3 py-2 text-[10px] uppercase tracking-[0.18em] text-[#1E4D8C]/70 border-t border-[#1E4D8C]/10 bg-[#FDFBF7]">
                   {a.caption}
                 </figcaption>
               </figure>
