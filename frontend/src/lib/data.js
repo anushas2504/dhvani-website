@@ -175,7 +175,6 @@ export const KAVITHA_ADS = [
   { src: "/portfolio/kavitha-1.png", caption: "Sponsored · Brand Awareness" },
   { src: "/portfolio/kavitha-2.png", caption: "Sponsored · Catalogue Retargeting" },
   { src: "/portfolio/kavitha-3.png", caption: "Sponsored · Lookbook Carousel" },
-  { src: "/portfolio/kavitha-4.png", caption: "Sponsored · Conversion Ad" },
 ];
 
 // Exact client logos referenced in the portfolio

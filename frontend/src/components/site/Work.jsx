@@ -159,40 +159,26 @@ export default function Work() {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {KAVITHA_ADS.map((a, i) => {
-              const fullImage = i === 3; // only 4th ad shows the full Instagram screenshot
-              return (
-                <figure
-                  key={i}
-                  data-testid={`kavitha-ad-${i}`}
-                  className="group bg-[#FDFBF7] border border-[#1E4D8C]/10 overflow-hidden"
-                >
-                  {fullImage ? (
-                    <div className="bg-[#FDFBF7]">
-                      <img
-                        src={a.src}
-                        alt={`Kavitha Gutta Meta ad ${i + 1}`}
-                        loading="lazy"
-                        className="w-full h-auto object-contain block group-hover:scale-[1.02] transition-transform duration-700"
-                      />
-                    </div>
-                  ) : (
-                    <div className="aspect-[9/16] overflow-hidden bg-[#F3F0EA]">
-                      <img
-                        src={a.src}
-                        alt={`Kavitha Gutta Meta ad ${i + 1}`}
-                        loading="lazy"
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                      />
-                    </div>
-                  )}
-                  <figcaption className="px-3 py-2 text-[10px] uppercase tracking-[0.18em] text-[#1E4D8C]/70 border-t border-[#1E4D8C]/10">
-                    {a.caption}
-                  </figcaption>
-                </figure>
-              );
-            })}
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+            {KAVITHA_ADS.map((a, i) => (
+              <figure
+                key={i}
+                data-testid={`kavitha-ad-${i}`}
+                className="group bg-[#FDFBF7] border border-[#1E4D8C]/10 overflow-hidden"
+              >
+                <div className="aspect-[9/16] overflow-hidden bg-[#F3F0EA]">
+                  <img
+                    src={a.src}
+                    alt={`Kavitha Gutta Meta ad ${i + 1}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <figcaption className="px-3 py-2 text-[10px] uppercase tracking-[0.18em] text-[#1E4D8C]/70 border-t border-[#1E4D8C]/10">
+                  {a.caption}
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </div>
 
