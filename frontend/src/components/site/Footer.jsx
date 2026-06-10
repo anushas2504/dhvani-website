@@ -5,9 +5,7 @@ export default function Footer() {
     <footer data-testid="site-footer" className="bg-[#1E4D8C] text-[#FDFBF7]/80 border-t border-[#FDFBF7]/10">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12 grid md:grid-cols-3 gap-10 items-center">
         <div>
-          <span className="inline-flex items-center bg-[#0F2A50] rounded-md px-3 py-2">
-            <img src={SITE.logo} alt="Dhvani" className="h-12 w-auto object-contain" />
-          </span>
+          <img src={SITE.logo} alt="Dhvani" className="h-16 w-auto object-contain brightness-0 invert" />
           <p className="text-xs uppercase tracking-[0.22em] text-[#F5C518] mt-4">Amplify. Engage. Succeed.</p>
         </div>
         <div className="md:text-center text-sm">

@@ -5,7 +5,7 @@ export const SITE = {
   phoneRaw: "919059294740",
   email: "anushas2504@gmail.com",
   address: "27, Kota Nageshwar Rao Road, RR Nagar, Kabela, Vijayawada",
-  logo: "https://customer-assets.emergentagent.com/job_project-gallery-267/artifacts/t197r3yt_Dhvani%20Brand%20Logo%20Design.png",
+  logo: "/dhvani-logo.png",
 };
 
 export const SERVICES = [

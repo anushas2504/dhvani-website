@@ -40,13 +40,11 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
         <Link to="/" data-testid="logo-link" className="flex items-center gap-3 group">
-          <span className="inline-flex items-center justify-center bg-[#0F2A50] rounded-md px-3 py-1.5 shadow-sm">
-            <img
-              src={SITE.logo}
-              alt="Dhvani logo"
-              className="h-9 w-auto object-contain"
-            />
-          </span>
+          <img
+            src={SITE.logo}
+            alt="Dhvani logo"
+            className="h-12 w-auto object-contain"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
