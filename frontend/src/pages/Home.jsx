@@ -19,7 +19,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div data-testid="home-page" className="bg-[#FDFBF7] text-[#0A192F]">
+    <div data-testid="home-page" className="bg-[#FDFBF7] text-[#1E4D8C]">
       <Header />
       <main>
         <Hero />

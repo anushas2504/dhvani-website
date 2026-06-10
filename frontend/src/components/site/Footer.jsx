@@ -2,11 +2,13 @@ import { SITE } from "@/lib/data";
 
 export default function Footer() {
   return (
-    <footer data-testid="site-footer" className="bg-[#0A192F] text-[#FDFBF7]/80 border-t border-[#FDFBF7]/10">
+    <footer data-testid="site-footer" className="bg-[#1E4D8C] text-[#FDFBF7]/80 border-t border-[#FDFBF7]/10">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12 grid md:grid-cols-3 gap-10 items-center">
         <div>
-          <p className="font-display text-3xl text-[#FDFBF7]">Dhvani</p>
-          <p className="text-xs uppercase tracking-[0.22em] text-[#D4AF37] mt-2">Amplify. Engage. Succeed.</p>
+          <span className="inline-flex items-center bg-[#0F2A50] rounded-md px-3 py-2">
+            <img src={SITE.logo} alt="Dhvani" className="h-12 w-auto object-contain" />
+          </span>
+          <p className="text-xs uppercase tracking-[0.22em] text-[#F5C518] mt-4">Amplify. Engage. Succeed.</p>
         </div>
         <div className="md:text-center text-sm">
           <p>{SITE.address}</p>

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { SITE } from "@/lib/data";
 
+// Logo image is on a transparent black bg — show on cream by clipping is handled via image alpha
+
 const navItems = [
   { id: "about", label: "About" },
   { id: "vision", label: "Vision" },
@@ -33,15 +35,18 @@ export default function Header() {
     <header
       data-testid="site-header"
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        scrolled ? "backdrop-blur-xl bg-[#FDFBF7]/80 border-b border-[#0A192F]/10" : "bg-transparent"
+        scrolled ? "backdrop-blur-xl bg-[#FDFBF7]/85 border-b border-[#1E4D8C]/15" : "bg-[#FDFBF7]/40 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
-        <Link to="/" data-testid="logo-link" className="flex items-center gap-2 group">
-          <span className="font-display text-3xl font-bold tracking-tight text-[#0A192F]">
-            Dhvani
+        <Link to="/" data-testid="logo-link" className="flex items-center gap-3 group">
+          <span className="inline-flex items-center justify-center bg-[#0F2A50] rounded-md px-3 py-1.5 shadow-sm">
+            <img
+              src={SITE.logo}
+              alt="Dhvani logo"
+              className="h-9 w-auto object-contain"
+            />
           </span>
-          <span className="hidden sm:inline-block w-2 h-2 rounded-full bg-[#D4AF37] group-hover:scale-150 transition" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
@@ -50,7 +55,7 @@ export default function Header() {
               key={n.id}
               data-testid={`nav-${n.id}`}
               onClick={() => goTo(n.id)}
-              className="link-underline text-sm tracking-wide text-[#0A192F]/80 hover:text-[#0A192F]"
+              className="link-underline text-sm tracking-wide text-[#0F2A50]/80 hover:text-[#0F2A50]"
             >
               {n.label}
             </button>

@@ -8,11 +8,12 @@
     --dh-bg: #FDFBF7;
     --dh-surface: #FFFFFF;
     --dh-surface-alt: #F3F0EA;
-    --dh-navy: #0A192F;
-    --dh-navy-hover: #112645;
-    --dh-gold: #D4AF37;
-    --dh-gold-hover: #B3932E;
-    --dh-text: #0A192F;
+    --dh-navy: #1E4D8C;
+    --dh-navy-hover: #163C70;
+    --dh-navy-deep: #0F2A50;
+    --dh-gold: #F5C518;
+    --dh-gold-hover: #E0B312;
+    --dh-text: #0F2A50;
     --dh-muted: #4A5568;
     --dh-border: #E2E8F0;
 }

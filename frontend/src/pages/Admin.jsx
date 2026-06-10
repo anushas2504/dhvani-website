@@ -34,14 +34,14 @@ export default function Admin() {
   };
 
   return (
-    <div data-testid="admin-page" className="min-h-screen bg-[#FDFBF7] text-[#0A192F]">
+    <div data-testid="admin-page" className="min-h-screen bg-[#FDFBF7] text-[#1E4D8C]">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12">
         <div className="flex items-center justify-between mb-10">
           <div>
             <Link
               to="/"
               data-testid="admin-back"
-              className="inline-flex items-center gap-2 text-sm text-[#0A192F]/70 hover:text-[#0A192F] mb-3"
+              className="inline-flex items-center gap-2 text-sm text-[#1E4D8C]/70 hover:text-[#1E4D8C] mb-3"
             >
               <ArrowLeft size={16} /> Back to site
             </Link>
@@ -63,34 +63,34 @@ export default function Admin() {
             <Loader2 className="animate-spin" size={18} /> Loading…
           </div>
         ) : leads.length === 0 ? (
-          <div data-testid="admin-empty" className="border border-dashed border-[#0A192F]/20 p-16 text-center">
+          <div data-testid="admin-empty" className="border border-dashed border-[#1E4D8C]/20 p-16 text-center">
             <p className="font-display text-2xl">No enquiries yet.</p>
             <p className="text-[#4A5568] mt-2">Leads submitted from the contact form will appear here.</p>
           </div>
         ) : (
-          <div className="overflow-x-auto border border-[#0A192F]/10">
+          <div className="overflow-x-auto border border-[#1E4D8C]/10">
             <table className="w-full text-sm" data-testid="leads-table">
               <thead className="bg-[#F3F0EA] text-left">
                 <tr>
                   {["Name", "Email", "Phone", "Service", "Message", "Received", ""].map((h) => (
-                    <th key={h} className="px-4 py-3 text-xs uppercase tracking-[0.16em] text-[#0A192F]/70 font-medium">{h}</th>
+                    <th key={h} className="px-4 py-3 text-xs uppercase tracking-[0.16em] text-[#1E4D8C]/70 font-medium">{h}</th>
                   ))}
                 </tr>
               </thead>
               <tbody>
                 {leads.map((l) => (
-                  <tr key={l.id} data-testid={`lead-row-${l.id}`} className="border-t border-[#0A192F]/10 align-top">
+                  <tr key={l.id} data-testid={`lead-row-${l.id}`} className="border-t border-[#1E4D8C]/10 align-top">
                     <td className="px-4 py-4 font-medium">{l.name}</td>
                     <td className="px-4 py-4 break-all"><a className="link-underline" href={`mailto:${l.email}`}>{l.email}</a></td>
                     <td className="px-4 py-4">{l.phone || "—"}</td>
                     <td className="px-4 py-4">{l.service || "—"}</td>
                     <td className="px-4 py-4 max-w-md text-[#4A5568]">{l.message}</td>
-                    <td className="px-4 py-4 whitespace-nowrap text-[#0A192F]/60">{new Date(l.created_at).toLocaleString()}</td>
+                    <td className="px-4 py-4 whitespace-nowrap text-[#1E4D8C]/60">{new Date(l.created_at).toLocaleString()}</td>
                     <td className="px-4 py-4">
                       <button
                         onClick={() => remove(l.id)}
                         data-testid={`lead-delete-${l.id}`}
-                        className="text-[#0A192F]/60 hover:text-red-600"
+                        className="text-[#1E4D8C]/60 hover:text-red-600"
                       >
                         <Trash2 size={16} />
                       </button>

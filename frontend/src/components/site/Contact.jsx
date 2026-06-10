@@ -31,12 +31,12 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" data-testid="contact-section" className="py-24 sm:py-32 lg:py-40 bg-[#0A192F] text-[#FDFBF7]">
+    <section id="contact" data-testid="contact-section" className="py-24 sm:py-32 lg:py-40 bg-[#1E4D8C] text-[#FDFBF7]">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 grid lg:grid-cols-12 gap-16">
         <div className="lg:col-span-5">
-          <p className="overline mb-6" style={{ color: "#D4AF37" }}>◆ 06 — Contact Us</p>
+          <p className="overline mb-6" style={{ color: "#F5C518" }}>◆ 06 — Contact Us</p>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05]">
-            Let's build <br /> <span className="italic text-[#D4AF37]">something loud.</span>
+            Let's build <br /> <span className="italic text-[#F5C518]">something loud.</span>
           </h2>
           <p className="mt-6 text-base text-[#FDFBF7]/70 leading-relaxed max-w-md">
             Tell us about your brand, your campaign, or your tour. We respond
@@ -49,10 +49,10 @@ export default function Contact() {
               data-testid="contact-phone"
               className="flex items-start gap-4 group"
             >
-              <Phone size={20} className="text-[#D4AF37] mt-1" />
+              <Phone size={20} className="text-[#F5C518] mt-1" />
               <div>
                 <p className="text-xs uppercase tracking-[0.2em] text-[#FDFBF7]/50">Phone</p>
-                <p className="font-display text-xl group-hover:text-[#D4AF37] transition">{SITE.phone}</p>
+                <p className="font-display text-xl group-hover:text-[#F5C518] transition">{SITE.phone}</p>
               </div>
             </a>
             <a
@@ -60,14 +60,14 @@ export default function Contact() {
               data-testid="contact-email"
               className="flex items-start gap-4 group"
             >
-              <Mail size={20} className="text-[#D4AF37] mt-1" />
+              <Mail size={20} className="text-[#F5C518] mt-1" />
               <div>
                 <p className="text-xs uppercase tracking-[0.2em] text-[#FDFBF7]/50">Email</p>
-                <p className="font-display text-xl group-hover:text-[#D4AF37] transition break-all">{SITE.email}</p>
+                <p className="font-display text-xl group-hover:text-[#F5C518] transition break-all">{SITE.email}</p>
               </div>
             </a>
             <div className="flex items-start gap-4" data-testid="contact-address">
-              <MapPin size={20} className="text-[#D4AF37] mt-1" />
+              <MapPin size={20} className="text-[#F5C518] mt-1" />
               <div>
                 <p className="text-xs uppercase tracking-[0.2em] text-[#FDFBF7]/50">Studio</p>
                 <p className="text-base text-[#FDFBF7]/90 max-w-xs">{SITE.address}</p>
@@ -134,11 +134,11 @@ export default function Contact() {
                 className="line-input bg-transparent"
                 style={{ borderColor: "rgba(253,251,247,0.25)", color: "#FDFBF7" }}
               >
-                <option value="" className="text-[#0A192F]">Choose a service…</option>
+                <option value="" className="text-[#1E4D8C]">Choose a service…</option>
                 {SERVICES.map((s) => (
-                  <option key={s.id} value={s.title} className="text-[#0A192F]">{s.title}</option>
+                  <option key={s.id} value={s.title} className="text-[#1E4D8C]">{s.title}</option>
                 ))}
-                <option value="Full-Funnel Campaign" className="text-[#0A192F]">Full-Funnel Campaign</option>
+                <option value="Full-Funnel Campaign" className="text-[#1E4D8C]">Full-Funnel Campaign</option>
               </select>
             </div>
           </div>
