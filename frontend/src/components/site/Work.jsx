@@ -1,4 +1,4 @@
-import { WORK, CONCERT_POSTERS, CLIENTS, KAVITHA_ADS } from "@/lib/data";
+import { WORK, CONCERT_POSTERS, CLIENTS, KAVITHA_ADS, KAVITHA_HERO } from "@/lib/data";
 import { ArrowUpRight, MapPin, Calendar } from "lucide-react";
 
 export default function Work() {
@@ -75,13 +75,32 @@ export default function Work() {
               className={`grid lg:grid-cols-12 gap-8 items-center ${idx % 2 ? "lg:[direction:rtl]" : ""}`}
             >
               <div className="lg:col-span-7 [direction:ltr]">
-                <div className="aspect-[4/3] overflow-hidden border border-[#1E4D8C]/15 bg-[#F3F0EA]">
-                  <img
-                    src={w.image}
-                    alt={w.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                  />
-                </div>
+                {w.image ? (
+                  <div className="aspect-[4/3] overflow-hidden border border-[#1E4D8C]/15 bg-[#F3F0EA]">
+                    <img
+                      src={w.image}
+                      alt={w.title}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                ) : (
+                  <div className="aspect-[4/3] bg-[#1E4D8C] text-[#FDFBF7] p-12 flex flex-col justify-between">
+                    <div>
+                      <p className="text-[10px] uppercase tracking-[0.22em] text-[#F5C518]">Meta Sales Funnel</p>
+                      <h4 className="font-display text-3xl sm:text-4xl mt-4 leading-tight">
+                        7 creatives · <span className="italic text-[#F5C518]">one funnel</span>
+                      </h4>
+                    </div>
+                    <div className="grid grid-cols-2 gap-6">
+                      {w.metrics.slice(0, 4).map((m) => (
+                        <div key={m.k}>
+                          <p className="font-display text-3xl text-[#F5C518]">{m.v}</p>
+                          <p className="text-[10px] uppercase tracking-[0.18em] text-[#FDFBF7]/70 mt-1">{m.k}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
               <div className="lg:col-span-5 [direction:ltr]">
                 <p className="overline mb-4">{w.category}</p>
@@ -117,18 +136,28 @@ export default function Work() {
 
         {/* Kavitha Gutta — Meta sales funnel ads gallery */}
         <div className="mt-24 border-t border-[#1E4D8C]/15 pt-16">
-          <div className="grid lg:grid-cols-12 gap-10 items-end mb-10">
-            <div className="lg:col-span-7">
+          <div className="grid lg:grid-cols-12 gap-10 items-stretch mb-10">
+            <div className="lg:col-span-5">
+              <div className="aspect-[4/5] overflow-hidden bg-[#F3F0EA] border border-[#1E4D8C]/10">
+                <img
+                  src={KAVITHA_HERO}
+                  alt="Kavitha Gutta bridal couture"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div className="lg:col-span-7 flex flex-col justify-end">
               <p className="overline mb-4">◆ Kavitha Gutta — Meta Sales Funnel</p>
-              <h3 className="font-display text-3xl sm:text-4xl text-[#1E4D8C] leading-tight">
+              <h3 className="font-display text-3xl sm:text-4xl lg:text-5xl text-[#1E4D8C] leading-tight">
                 Bridal couture, <span className="italic">scaled on Meta.</span>
               </h3>
+              <p className="mt-6 text-base text-[#4A5568] leading-relaxed max-w-xl">
+                A multi-stage Meta funnel for designer Kavitha Gutta — awareness,
+                consideration and conversion creatives running side-by-side.
+                Below: actual sponsored ads served to the audience.
+              </p>
             </div>
-            <p className="lg:col-span-4 lg:col-start-9 text-base text-[#4A5568] leading-relaxed">
-              A multi-stage Meta funnel for designer Kavitha Gutta — awareness,
-              consideration and conversion creatives running side-by-side.
-              Below: actual sponsored ads served to the audience.
-            </p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {KAVITHA_ADS.map((a, i) => (

@@ -102,21 +102,21 @@ export const CONCERT_POSTERS = [
     tour: "Live in Concert",
     date: "Sun · Nov 19, 2023 · 5:30 PM",
     venue: "Beverly O'Neill Theater, Long Beach CA",
-    accent: "from-[#1E4D8C] to-[#163C70]",
+    image: "/portfolio/richa-poster.jpg",
   },
   {
     artist: "Atif Aslam",
-    tour: "Live in Dallas",
-    date: "Sat · Oct 28",
-    venue: "Curtis Culwell Center, Dallas",
-    accent: "from-[#0F2A50] to-[#1E4D8C]",
+    tour: "Live in Concert",
+    date: "Sun · Oct 29 · 7:00 PM",
+    venue: "Gas South District, Duluth GA",
+    image: "/portfolio/atif-poster.jpg",
   },
   {
     artist: "Jubin Nautiyal",
     tour: "Live in Concert",
     date: "Fri · Mar 08, 2024 · 8:30 PM",
     venue: "Hard Rock Live at Etess Arena, Atlantic City NJ",
-    accent: "from-[#1E4D8C] to-[#0F2A50]",
+    image: "/portfolio/jubin-poster.jpg",
   },
 ];
 
@@ -163,23 +163,12 @@ export const WORK = [
       { k: "Link Clicks", v: "1,549" },
       { k: "Spend", v: "₹7.72K" },
     ],
-    image: "/portfolio/arka-showroom.webp",
-  },
-  {
-    id: "shilpa",
-    title: "Bride Shilpa for ARKA — Reel Boost",
-    category: "Meta Reel + Boost · Jun 2024",
-    summary:
-      "Single high-performing reel for bridal house ARKA, amplified with paid promotion to reach over half a million viewers.",
-    metrics: [
-      { k: "Reach", v: "557,801" },
-      { k: "Interactions", v: "11,336" },
-      { k: "Profile Visits", v: "542" },
-      { k: "Format", v: "Reel + Ad" },
-    ],
-    image: "/portfolio/kavitha-bride.webp",
+    image: null,
   },
 ];
+
+// Hero/feature image for the Kavitha Gutta section
+export const KAVITHA_HERO = "/portfolio/kavitha-bride.webp";
 
 // Real Kavitha Gutta Meta sales-funnel ads extracted from the portfolio
 export const KAVITHA_ADS = [

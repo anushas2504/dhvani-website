@@ -38,13 +38,21 @@ export default function Header() {
         scrolled ? "backdrop-blur-xl bg-[#FDFBF7]/85 border-b border-[#1E4D8C]/15" : "bg-[#FDFBF7]/40 backdrop-blur-sm"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-24 flex items-center justify-between">
         <Link to="/" data-testid="logo-link" className="flex items-center gap-3 group">
           <img
             src={SITE.logo}
-            alt="Dhvani logo"
-            className="h-12 w-auto object-contain"
+            alt="Dhvani logo mark"
+            className="h-16 w-auto object-contain"
           />
+          <div className="leading-none">
+            <span className="block font-display text-3xl sm:text-4xl font-bold tracking-tight text-[#1E4D8C]">
+              Dhvani
+            </span>
+            <span className="hidden sm:block text-[10px] uppercase tracking-[0.22em] text-[#F5C518] mt-1">
+              Branding Solutions
+            </span>
+          </div>
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
