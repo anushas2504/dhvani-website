@@ -3,7 +3,7 @@ export const SITE = {
   tagline: "Amplify. Engage. Succeed.",
   phone: "+91 90592 94740",
   phoneRaw: "919059294740",
-  email: "anushas2504@gmail.com",
+  email: "anushas@dhvanidigitalmarketing.com",
   address: "27, Kota Nageshwar Rao Road, RR Nagar, Kabela, Vijayawada",
   logo: "/dhvani-logo.png",
 };
