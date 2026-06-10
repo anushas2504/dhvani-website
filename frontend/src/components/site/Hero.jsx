@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 grid lg:grid-cols-12 gap-12 items-end">
         <div className="lg:col-span-7">
           <p className="overline mb-6" data-testid="hero-overline">
-            ◆ Branding Solutions — est. Vijayawada
+            ◆ Digital Growth Studio — est. Vijayawada
           </p>
           <h1
             className="font-display text-5xl sm:text-7xl lg:text-[7.5rem] leading-[0.95] tracking-tight text-[#1E4D8C]"
